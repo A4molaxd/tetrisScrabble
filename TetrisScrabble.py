@@ -52,7 +52,7 @@ COLORS = {"L": "blue", "J": "orange", "T": "violet", "I": "lightblue", "S": "gre
 
 WORDS = []
 for i in LETTERS:
-    with open(f"tetrisScrabble/dicts/wordsScrabble1{i}.txt", "r", encoding='utf-8') as f:
+    with open(f"dicts/wordsScrabble1{i}.txt", "r", encoding='utf-8') as f:
         WORDS += [f.read().splitlines()]
 
 def chooseLetter():
