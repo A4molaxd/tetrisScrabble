@@ -130,7 +130,6 @@ class Piece():
                     text = font.render(self.letters[i][j], True, "black")
                     screen.blit(text, ((self.x+i)*SIZE+21*SIZE/64, (self.y+j)*SIZE+3*SIZE/16))
 
-    
     def update(self, board):        
         self.y += 1
         if self.checkCollision(board):
@@ -159,7 +158,6 @@ class Piece():
             self.y -= 1
             return True
             
-
     def rotate(self, spin, board):
         if spin == "CCW":
             oldPiece = self.piece.copy()
@@ -219,8 +217,6 @@ class Piece():
                             return True
         return False
 
-        
-
 class Board():
     def __init__(self):
         self.board = [[0 for _ in range(ROWS)] for _ in range(COLS)]
@@ -237,7 +233,6 @@ class Board():
                 if self.letters[i][j] != 0:
                     text = font.render(self.letters[i][j], True, "black")
                     screen.blit(text, (i*SIZE+21*SIZE/64, j*SIZE+3*SIZE/16))
-
     
     def appendPiece(self, piecex):
         for j in range(len(piecex.piece)):
