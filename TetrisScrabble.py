@@ -1,10 +1,7 @@
 import pygame
 import random
-import sys
 from bs4 import BeautifulSoup
 import requests
-sys.path.append("/Users/artai/OneDrive/Desktop/Artai/Programacion")
-#from floatingMenuLibrary import floatingMenu, Option
 
 pygame.init()
 pygame.font.init()
